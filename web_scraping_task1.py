@@ -5,7 +5,7 @@ import requests
 def scrap_top_list():
     url='https://www.imdb.com/india/top-rated-indian-movies/?ref_=nv_mv_250_in'
     response=requests.get(url)
-
+    
     soup=BeautifulSoup(response.text,'html.parser')
     movie_name=[]
     year_of_releas=[]
